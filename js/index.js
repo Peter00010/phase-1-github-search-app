@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
       <p>${originalName}</p>
       <a target = "_blank" href = "https://www.github.com/${originalName}?tab=repositories"<p>View Repositories</p>
         `;
+      })
+      .catch((err) => {
+        console.log(err);
       });
   });
 });
